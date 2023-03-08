@@ -1,0 +1,29 @@
+/* Define styles for the table */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+thead {
+  background-color: rgba(179, 133, 20, 0.948);
+  font-weight: bold;
+}
+
+th,
+td {
+  text-align: left;
+  padding: 8px;
+  border: 1px solid #000000;
+}
+
+/* Add some spacing and centering for the page */
+.coffees {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.coffee-list {
+  margin-top: 30px;
+}

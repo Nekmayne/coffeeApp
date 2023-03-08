@@ -30,6 +30,13 @@ coffeeController.get("/", (req, res) => {
   } catch (err) {
     console.error(err);
   }
+
+  const search = req.query.search;
+  if (search) {
+    coffees = coffees.filter((coffee) => {
+      return coffee.name.toLowerCase().includes(search.toLowerCase());
+    });
+  }
   res.send(coffees);
 });
 

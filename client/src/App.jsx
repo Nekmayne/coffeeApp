@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./App.css";
+import AddCoffeeForm from "./components/AddCoffeeForm";
 
 function CoffeeForm() {
   const [coffeeData, setCoffeeData] = useState([]);
@@ -14,12 +15,17 @@ function CoffeeForm() {
     getCoffeeData();
   }, []);
 
+  const addCoffee = () => {
+    getCoffeeData();
+  };
+
   return (
     <div className="coffees">
       <h1>Add a coffee</h1>
+      <AddCoffeeForm addCoffee={addCoffee} coffeeData={coffeeData} />
       <h1>Favorite Coffees</h1>
+
       <div className="coffee-list">
-        <h1>List:</h1>
         <table>
           <thead>
             <tr>
@@ -30,9 +36,9 @@ function CoffeeForm() {
             </tr>
           </thead>
           <tbody>
-            {coffeeData.map((coffee, coffeeIndex) => {
+            {coffeeData.map((coffee, idx) => {
               return (
-                <tr key={coffeeIndex}>
+                <tr key={idx}>
                   <td>{coffee.name}</td>
                   <td>{coffee.weight}</td>
                   <td>{coffee.price}</td>

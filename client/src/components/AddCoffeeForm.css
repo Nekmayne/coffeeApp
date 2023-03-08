@@ -1,0 +1,52 @@
+.coffee-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+label {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+input {
+  padding: 5px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+button {
+  background-color: #495cc8;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 8px;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #2c387e;
+}
+
+.roast-levels {
+  display: flex;
+  flex-direction: row;
+}
+.roast-levels label {
+  margin-right: 10px;
+}
+
+.success {
+  color: green;
+  font-size: 20px;
+  border-style: solid;
+  margin-top: 20px;
+}
+
+.error {
+  color: red;
+  font-size: 20px;
+  border-style: solid;
+  margin-top: 20px;
+}

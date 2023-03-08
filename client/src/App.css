@@ -1,4 +1,8 @@
 /* Define styles for the table */
+.coffees {
+  height: 100vh;
+}
+
 table {
   border-collapse: collapse;
   width: 100%;
@@ -27,3 +31,5 @@ td {
 .coffee-list {
   margin-top: 30px;
 }
+
+

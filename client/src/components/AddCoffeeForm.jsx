@@ -92,7 +92,7 @@ function AddCoffeeForm({ addCoffee }) {
         <label>Roast level:</label>
         <div className="roast-levels">
           {roastLevels.map((level) => (
-            <label key={level}>
+            <label data-testid={`roast-item`} key={level}>
               <input
                 type="radio"
                 value={level}

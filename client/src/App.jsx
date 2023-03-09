@@ -30,8 +30,8 @@ function CoffeeForm() {
           <thead>
             <tr>
               <th>Name</th>
-              <th>Weight</th>
-              <th>Price</th>
+              <th>Weight (g)</th>
+              <th>Price (€)</th>
               <th>Roast</th>
             </tr>
           </thead>
@@ -40,8 +40,8 @@ function CoffeeForm() {
               return (
                 <tr key={idx}>
                   <td>{coffee.name}</td>
-                  <td>{coffee.weight}</td>
-                  <td>{coffee.price}</td>
+                  <td>{coffee.weight} g </td>
+                  <td>{coffee.price} € </td>
                   <td>{coffee.roast}</td>
                 </tr>
               );

@@ -6,7 +6,7 @@ function AddCoffeeForm({ addCoffee }) {
   const [name, setName] = useState("");
   const [weight, setWeight] = useState("");
   const [price, setPrice] = useState("");
-  const [roast, setRoast] = useState("light");
+  const [roast, setRoast] = useState("");
   const [message, setMessage] = useState(null);
   const [status, setStatus] = useState(null);
 
@@ -86,9 +86,9 @@ function AddCoffeeForm({ addCoffee }) {
         <label>Coffee name:</label>
         <input type="text" value={name} onChange={handleNameChange} />
         <label>Package weight (g):</label>
-        <input type="text" value={weight} onChange={handleWeightChange} />
+        <input type="number" value={weight} onChange={handleWeightChange} />
         <label>Price (€):</label>
-        <input type="text" value={price} onChange={handlePriceChange} />
+        <input type="number" value={price} onChange={handlePriceChange} />
         <label>Roast level:</label>
         <div className="roast-levels">
           {roastLevels.map((level) => (

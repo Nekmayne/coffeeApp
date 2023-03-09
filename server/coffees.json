@@ -1,4 +1,1 @@
-[
-  { "name": "Tumma", "weight": "150", "price": "3.5", "roast": "3" },
-  { "name": "Vaalea", "weight": "190", "price": "1.5", "roast": "2" }
-]
+[{ "name": "Kahvi", "weight": "250", "price": "4", "roast": "Medium" }]

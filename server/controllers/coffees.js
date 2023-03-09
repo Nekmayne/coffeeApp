@@ -34,7 +34,9 @@ coffeeController.get("/", (req, res) => {
   const search = req.query.search;
   if (search) {
     coffees = coffees.filter((coffee) => {
-      return coffee.name.toLowerCase().includes(search.toLowerCase());
+      return Object.values(coffee).some((value) =>
+        String(value).toLowerCase().includes(search.toLowerCase())
+      );
     });
   }
   res.send(coffees);
